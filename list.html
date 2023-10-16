@@ -22,11 +22,10 @@
         </div>
         <ul class="table-body">
           
-          <% items.forEach((item) => { %>
            <li>
             <div class="item-data">
-              <span class="id-column"><"たまねぎ"></span>
-              <span class="name-column"><%= item.name %></span>
+              <span class="id-column">たまねぎ</span>
+              <span class="name-column">にんじん</span>
             </div>
             <div class="item-menu">
               <form action="/delete/<%= item.id %>" method="post">
@@ -35,9 +34,7 @@
               <a href="/edit/<%= item.id %>">編集</a>
             </div>
           </li>
-        
-        <% }) %>  
-
+  
         </ul>
       </div>
     </div>
